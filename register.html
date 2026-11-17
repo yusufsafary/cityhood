@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cityhood · Register</title>
+<meta name="description" content="Register for Cityhood GTD and WL spots. Follow and repost the project X account, submit your wallet, winners are drawn by raffle. Mint on OpenSea via SeaDrop.">
+<link rel="icon" href="/img/logo.png?v=1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cityhood">
+<meta property="og:title" content="Cityhood · Register for GTD and WL">
+<meta property="og:description" content="500 free GTD spots and 1,000 WL spots at $0.50, drawn by raffle. Mint on OpenSea via SeaDrop.">
+<meta property="og:url" content="https://cityhood.fun/register">
+<meta property="og:image" content="https://cityhood.fun/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cityhood · Register for GTD and WL">
+<meta name="twitter:description" content="500 free GTD spots and 1,000 WL spots at $0.50, drawn by raffle. Mint on OpenSea via SeaDrop.">
+<meta name="twitter:image" content="https://cityhood.fun/img/og.jpg">
+<link rel="stylesheet" href="/css/site.css?v=1">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="/" aria-label="Cityhood home">
+      <img src="/img/logo.png?v=1" alt="Cityhood logo" width="36" height="36">
+      <span class="wordmark">City<span class="wm-lime">hood</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="register" aria-current="page">Register</a>
+      <a href="about">About</a>
+      <a href="#" data-x-link>X</a>
+      <a class="btn btn-ghost btn-small" href="#" data-opensea>Mint on OpenSea</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="page-head">
+      <p class="kicker">Registration</p>
+      <h1 class="display">GTD and WL spots</h1>
+      <p>Registration for Cityhood mint stages happens on this page and nowhere else. Status right now: <strong style="color:var(--lime)">registration opening soon</strong>. Dates will be announced on the project X account and posted here. Public mint needs no registration.</p>
+    </section>
+
+    <section class="section" style="padding-top:36px">
+      <div class="sec-head">
+        <p class="kicker">Requirements</p>
+        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">Before you register</h2>
+      </div>
+      <ul class="req-list">
+        <li><b>Follow the project X account.</b> <span>Handle announced soon. Registrations from non-followers do not qualify.</span></li>
+        <li><b>Repost the announcement post.</b> <span>Repost, not just a like. Both checks run against the X username you submit.</span></li>
+        <li><b>Use one wallet you control.</b> <span>Winners mint from the exact address registered here. Addresses cannot be swapped after the draw.</span></li>
+        <li><b>Public address only.</b> <span>Registration asks for a public wallet address and an X username. No wallet connection, no signature, no payment on this site, ever.</span></li>
+      </ul>
+    </section>
+
+    <section class="section" style="padding-top:8px">
+      <div class="sec-head">
+        <p class="kicker">Forms</p>
+        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">Pick your stage</h2>
+        <p>You may register for both stages with the same wallet. Winning GTD does not block a WL win.</p>
+      </div>
+
+      <div class="reg-grid">
+
+        <article class="card reg-card" data-reg-card="gtd">
+          <div class="stage-top">
+            <span class="stage-name display" style="font-size:24px">GTD</span>
+            <span class="stage-price display" style="font-size:24px;color:var(--lime)">Free</span>
+          </div>
+          <div class="reg-facts">
+            <span>Allocation <b>500 spots</b></span>
+            <span>Cap <b>max 1 / wallet</b></span>
+            <span>Allocation <b>guaranteed</b></span>
+          </div>
+          <div class="reg-closed">
+            <div class="rc-title">Registration opens soon</div>
+            <p>GTD form activates here when registration opens. 500 spots, drawn by raffle from valid registrations.</p>
+          </div>
+          <div class="reg-open" hidden>
+            <form class="reg-form" novalidate>
+              <div class="field">
+                <label for="gtd-wallet">EVM wallet address</label>
+                <input id="gtd-wallet" name="wallet" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="0x...">
+              </div>
+              <div class="field">
+                <label for="gtd-x">X username</label>
+                <input id="gtd-x" name="xusername" type="text" autocomplete="off" spellcheck="false" placeholder="@username">
+              </div>
+              <button class="btn btn-lime" type="submit" style="width:100%">Submit GTD registration</button>
+              <p class="form-msg" role="status"></p>
+            </form>
+          </div>
+        </article>
+
+        <article class="card reg-card" data-reg-card="wl">
+          <div class="stage-top">
+            <span class="stage-name display" style="font-size:24px">WL</span>
+            <span class="stage-price display" style="font-size:24px;color:var(--lime)">$0.50</span>
+          </div>
+          <div class="reg-facts">
+            <span>Allocation <b>1,000 spots</b></span>
+            <span>Cap <b>max 2 / wallet</b></span>
+            <span>Paid <b>in ETH at mint</b></span>
+          </div>
+          <div class="reg-closed">
+            <div class="rc-title">Registration opens soon</div>
+            <p>WL form activates here when registration opens. 1,000 spots at $0.50, drawn by raffle from valid registrations.</p>
+          </div>
+          <div class="reg-open" hidden>
+            <form class="reg-form" novalidate>
+              <div class="field">
+                <label for="wl-wallet">EVM wallet address</label>
+                <input id="wl-wallet" name="wallet" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="0x...">
+              </div>
+              <div class="field">
+                <label for="wl-x">X username</label>
+                <input id="wl-x" name="xusername" type="text" autocomplete="off" spellcheck="false" placeholder="@username">
+              </div>
+              <button class="btn btn-lime" type="submit" style="width:100%">Submit WL registration</button>
+              <p class="form-msg" role="status"></p>
+            </form>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="reg-note">One registration per wallet per stage. Duplicate entries for the same wallet and stage count once. Raffle runs after registration closes, and winners are drawn only from registrations that pass the follow and repost checks. Winning a GTD spot guarantees one free mint during the GTD stage. Winning WL unlocks the $0.50 stage, max 2 per wallet. Unminted GTD and WL supply rolls into Public.</p>
+    </section>
+
+    <section class="section" style="padding-top:8px">
+      <div class="sec-head">
+        <p class="kicker">Status checker</p>
+        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">Check your wallet</h2>
+        <p>After the raffle, winner lists publish on this site. Paste any wallet address to check for a GTD or WL spot.</p>
+      </div>
+      <div class="checker rv">
+        <div class="check-row">
+          <input id="check-address" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="0x... wallet address" aria-label="Wallet address to check">
+          <button class="btn btn-lime" id="check-btn" type="button">Check status</button>
+        </div>
+        <div class="check-result" id="check-result" role="status"></div>
+      </div>
+      <p class="reg-note">Checker reads the published winner lists only. It never asks for a signature and never connects to your wallet.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top foot-brand">
+      <span class="wordmark">City<span class="wm-lime">hood</span></span>
+      <p>Every block has an owner. A 3,333 piece NFT collection of city blocks on Robinhood Chain.</p>
+      <div class="minigrid" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span class="solid"></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h3>Project</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="register">Register</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="#" data-x-link>X (Twitter)</a><span data-x-soon>X · handle announced soon</span></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="terms">Terms of Use</a></li>
+          <li><a href="privacy">Privacy Policy</a></li>
+          <li><a href="disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>Contracts</h3>
+        <ul>
+          <li>SeaDrop drop contract · announced before mint</li>
+          <li>Chain · Robinhood Chain 4663</li>
+          <li><a href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener">Blockscout explorer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Cityhood</span>
+      <span>Mint on OpenSea via SeaDrop</span>
+      <span>Gas token · ETH</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/config.js?v=1"></script>
+<script src="/js/app.js?v=1"></script>
+</body>
+</html>

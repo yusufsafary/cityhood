@@ -1,0 +1,39 @@
+Cityhood (CITY)
+Website: https://cityhood.fun
+Tagline: Every block has an owner
+
+Summary
+Cityhood is an NFT collection of 3,333 city blocks on Robinhood Chain (chain ID 4663, gas token ETH). Each NFT is an isometric diorama of one city block: matte black buildings with lime-lit windows on pure black. Artwork tiers: Block (common), District (rare), Landmark (legendary).
+
+Mint model
+Minting happens only on OpenSea, through the SeaDrop drop protocol. This website is for information, registration, and winner status checking only. It never sells NFTs, takes payment, or asks for wallet signatures.
+
+Stages (total supply 3,333)
+- GTD: 500 spots, free, max 1 per wallet, guaranteed allocation for raffle winners.
+- WL: 1,000 spots, $0.50 (paid in ETH equivalent at mint), max 2 per wallet, raffle winners.
+- Public: 1,833 supply, $1.50 (paid in ETH equivalent at mint), max 3 per wallet, open to everyone, no registration.
+Unminted GTD and WL supply rolls into Public.
+
+Registration
+Registration for GTD and WL takes place at https://cityhood.fun/register
+Requirements: follow the project X account (handle to be announced) and repost the announcement post, then submit an EVM wallet address and X username.
+Winners are chosen by raffle from valid registrations after registration closes. One registration per wallet per stage.
+Winner lists are published at https://cityhood.fun/data/status.json and can be checked on the Register page.
+
+Royalty
+5% creator royalty (ERC-2981).
+
+Contracts
+SeaDrop drop contract: not yet deployed; the address will be announced on this site before mint.
+Chain explorer: https://robinhoodchain.blockscout.com
+
+Status
+Registration opening soon. No registration, raffle, or mint dates have been announced yet. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
+
+Pages
+- Home: https://cityhood.fun/
+- Register: https://cityhood.fun/register
+- About: https://cityhood.fun/about
+- Terms of Use: https://cityhood.fun/terms
+- Privacy Policy: https://cityhood.fun/privacy
+- Disclaimer: https://cityhood.fun/disclaimer
