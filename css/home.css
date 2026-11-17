@@ -344,7 +344,7 @@
 .alloc { height: 58px; }
 .seg-gtd { flex: 500 1 0; }
 .seg-wl { flex: 1000 1 0; }
-.seg-pub { flex: 1833 1 0; }
+.seg-pub { flex: 2833 1 0; }
 .tier { display: flex; flex-direction: column; }
 .tier-body { display: flex; flex-direction: column; flex: 1; }
 .tier-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }

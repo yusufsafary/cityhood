@@ -153,7 +153,7 @@
             checkResult.className = "check-result show info";
             checkResult.innerHTML =
               '<div class="cr-title">Not on the winner lists</div>' +
-              "<p>No GTD or WL spot for this wallet. Public mint needs no registration: 1,833 supply at $1.50, max 3 per wallet, on OpenSea.</p>";
+              "<p>No GTD or WL spot for this wallet. Public mint needs no registration: 2,833 supply at $1.50, max 3 per wallet, on OpenSea.</p>";
           }
         })
         .catch(function () {
@@ -178,7 +178,7 @@
       blocks.forEach(function (b) { b.classList.remove("lit"); });
       if (!block.classList.contains("solid")) block.classList.add("lit");
       cap.innerHTML = "<strong>Block Nº " + block.getAttribute("data-block") +
-        "</strong> · one of 3,333 · every block has an owner";
+        "</strong> · one of 4,333 · every block has an owner";
     };
     blocks.forEach(function (block) {
       block.addEventListener("mouseenter", function () { light(block); });

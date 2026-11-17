@@ -4,15 +4,15 @@ X: https://x.com/cityhoodfun (@cityhoodfun)
 Tagline: Every block has an owner
 
 Summary
-Cityhood is an NFT collection of 3,333 city blocks on Robinhood Chain (chain ID 4663, gas token ETH). Each NFT is an isometric diorama of one city block: matte black buildings with lime-lit windows on pure black. Artwork tiers: Block (common), District (rare), Landmark (legendary).
+Cityhood is an NFT collection of 4,333 city blocks on Robinhood Chain (chain ID 4663, gas token ETH). Each NFT is an isometric diorama of one city block: matte black buildings with lime-lit windows on pure black. Artwork tiers: Block (common), District (rare), Landmark (legendary).
 
 Mint model
 Minting happens only on OpenSea, through the SeaDrop drop protocol. This website is for information, registration, and winner status checking only. It never sells NFTs, takes payment, or asks for wallet signatures.
 
-Stages (total supply 3,333)
+Stages (total supply 4,333)
 - GTD: 500 spots, free, max 1 per wallet, guaranteed allocation for raffle winners.
 - WL: 1,000 spots, $0.50 (paid in ETH equivalent at mint), max 2 per wallet, raffle winners.
-- Public: 1,833 supply, $1.50 (paid in ETH equivalent at mint), max 3 per wallet, open to everyone, no registration.
+- Public: 2,833 supply, $1.50 (paid in ETH equivalent at mint), max 3 per wallet, open to everyone, no registration.
 Unminted GTD and WL supply rolls into Public.
 
 Registration
