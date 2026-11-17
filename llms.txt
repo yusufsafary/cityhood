@@ -29,7 +29,7 @@ SeaDrop drop contract: not yet deployed; the address will be announced on this s
 Chain explorer: https://robinhoodchain.blockscout.com
 
 Status
-Registration opening soon. No registration, raffle, or mint dates have been announced yet. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
+Registration is open for GTD and WL spots on the Register page; winners are drawn by raffle after registration closes. No mint dates have been announced yet. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
 
 Pages
 - Home: https://cityhood.fun/
