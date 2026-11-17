@@ -202,7 +202,7 @@
   overflow: hidden;
   margin: 0;
 }
-.tier img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.tier img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; background: #000; }
 .tier-body { padding: 20px 22px 24px; }
 .tier-name {
   font-family: "Archivo Black", sans-serif;
