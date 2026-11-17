@@ -295,3 +295,18 @@
 @media (max-width: 560px) {
   .alloc .seg { font-size: 10.5px; letter-spacing: 0.02em; padding-left: 5px; padding-right: 5px; white-space: nowrap; overflow: hidden; }
 }
+
+/* ---------- v3: marquee, lime band, mobile hero ---------- */
+.marquee { overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 13px 0; background: var(--panel); }
+.mtrack { display: flex; width: max-content; white-space: nowrap; animation: mq 26s linear infinite; font-family: "Space Mono", monospace; font-size: 12.5px; font-weight: 700; letter-spacing: 0.16em; color: var(--lime); }
+@keyframes mq { to { transform: translateX(-50%); } }
+.limeband { background: var(--lime); color: var(--ink); font-family: "Archivo Black", sans-serif; text-transform: uppercase; text-align: center; font-size: clamp(21px, 6.4vw, 42px); letter-spacing: 0.02em; padding: 20px 16px; line-height: 1.15; }
+@media (max-width: 719px) {
+  .hero { padding: 40px 0 46px; }
+  .mega { font-size: clamp(46px, 13.6vw, 104px); max-width: 100%; }
+  .hero-art { margin-left: -20px; margin-right: -20px; }
+  .hero-art img { border-radius: 0; border-left: none; border-right: none; }
+  .hero-art figcaption { padding: 0 20px; }
+  .hero-art::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .mtrack { animation: none; } }

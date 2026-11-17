@@ -50,6 +50,7 @@
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
+html, body { overflow-x: hidden; }
 
 body {
   margin: 0;
@@ -498,4 +499,32 @@ html.js .rv.in { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
   .rv { opacity: 1; transform: none; transition: none; }
   .btn { transition: none; }
+}
+
+/* ---------- v3 mobile-first pass ---------- */
+.site-footer { border-top: 2px solid var(--lime); }
+.sticky-cta { display: none; }
+@media (max-width: 719px) {
+  .sticky-cta {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(7, 8, 7, 0.92); backdrop-filter: blur(10px);
+    border-top: 1px solid var(--lime-line);
+    font-family: "Space Mono", monospace; font-size: 11.5px; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--paper); line-height: 1.45;
+  }
+  .sticky-cta .btn { flex: 0 0 auto; padding: 12px 22px; }
+  body:has(.sticky-cta) { padding-bottom: 66px; }
+  .page-head .display { font-size: clamp(36px, 11vw, 54px); }
+  .table-scroll { overflow-x: visible; border: none; border-radius: 0; }
+  table.econ { min-width: 0; background: transparent; }
+  table.econ thead { display: none; }
+  table.econ, table.econ tbody, table.econ tr, table.econ td { display: block; width: 100%; }
+  table.econ tr { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 8px 16px; margin-bottom: 12px; }
+  table.econ td { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; text-align: right; padding: 8px 0; border-bottom: 1px dashed rgba(244, 244, 238, 0.09); }
+  table.econ tr td:last-child { border-bottom: none; }
+  table.econ td::before { content: attr(data-label); font-family: "Space Mono", monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted); text-align: left; flex: 0 0 auto; padding-top: 2px; }
+  table.econ td:first-child { font-size: 19px; }
+  table.econ td:first-child::before { padding-top: 6px; }
 }
