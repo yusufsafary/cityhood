@@ -314,3 +314,51 @@
 @media (max-width: 719px) {
   .plate-hero { border-radius: 0; border-left: none; border-right: none; }
 }
+
+/* ---------- v7: precision pass ---------- */
+.sec-top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 20px; }
+.sec-top .kicker { margin: 0; }
+.sec-idx { font-family: "Space Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.hchip { display: inline-grid; place-items: center; background: #0d0f0c; border: 1px solid var(--lime-line); border-radius: 17px; padding: 6px; margin-bottom: 24px; }
+.hchip .hero-logo { width: 62px; height: 62px; border-radius: 11px; margin: 0; display: block; }
+.p-chip { position: absolute; z-index: 2; font-family: "Space Mono", monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--paper); background: rgba(7, 8, 7, 0.85); border: 1px solid var(--lime-line); padding: 6px 10px; border-radius: 7px; }
+.p-chip-l { left: 12px; bottom: 12px; }
+.p-chip-r { right: 12px; top: 12px; color: var(--lime); }
+.hero-art figcaption { display: flex; justify-content: space-between; gap: 14px; }
+.hero-art figcaption .fig-r { color: var(--lime); white-space: nowrap; }
+.fact { position: relative; }
+.fact::before { content: ""; position: absolute; top: 0; left: 20px; width: 24px; height: 3px; background: var(--lime); }
+.dblock { position: relative; }
+.dblock::after { content: attr(data-block); position: absolute; left: 9px; bottom: 7px; font-family: "Space Mono", monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.08em; color: rgba(182, 255, 46, 0.65); }
+.dblock.solid::after, .dblock.lit::after { color: rgba(7, 8, 7, 0.78); }
+.dblock.solid { animation: bpulse 3.2s ease-in-out infinite; }
+@keyframes bpulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(182, 255, 46, 0.32); } 50% { box-shadow: 0 0 0 8px rgba(182, 255, 46, 0); } }
+.dcap { border: 1px solid var(--line); background: var(--panel); border-radius: 10px; padding: 13px 16px; display: flex; align-items: center; gap: 12px; max-width: 560px; }
+.dcap::before { content: ""; flex: 0 0 auto; width: 9px; height: 9px; background: var(--lime); border-radius: 2px; }
+.stage-idx { font-family: "Space Mono", monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+.stage-card.hot .stage-idx { color: var(--lime); }
+.stage-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.stage-price { font-size: 30px; }
+.stage-card { transition: transform 0.18s ease, border-color 0.18s ease; }
+@media (hover: hover) { .stage-card:hover { transform: translateY(-3px); border-color: var(--lime-line); } }
+.alloc { height: 58px; }
+.seg-gtd { flex: 500 1 0; }
+.seg-wl { flex: 1000 1 0; }
+.seg-pub { flex: 1833 1 0; }
+.tier { display: flex; flex-direction: column; }
+.tier-body { display: flex; flex-direction: column; flex: 1; }
+.tier-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
+.tm-l { font-family: "Space Mono", monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.tier-meta .tier-rarity { margin-bottom: 0; }
+.tier p { margin-bottom: 18px; }
+.tier-data { margin-top: auto; padding-top: 14px; border-top: 1px dashed rgba(244, 244, 238, 0.13); display: flex; justify-content: space-between; gap: 10px; font-family: "Space Mono", monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.step { position: relative; overflow: hidden; }
+.step::after { content: attr(data-n); position: absolute; top: 4px; right: 14px; font-family: "Archivo Black", sans-serif; font-size: 92px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px rgba(182, 255, 46, 0.16); pointer-events: none; }
+.step h3, .step p, .step .step-no { position: relative; z-index: 1; }
+.cta-band { text-align: center; }
+.cta-band p { margin-inline: auto; }
+.cta-band .hero-cta { justify-content: center; }
+.cta-band .minigrid { margin: 0 auto 22px; }
+.cta-band h2 { font-size: clamp(30px, 7vw, 48px); }
+@media (prefers-reduced-motion: reduce) { .dblock.solid { animation: none; } }
+@media (max-width: 480px) { .p-chip-r { display: none; } .tier-data { font-size: 9px; } }
