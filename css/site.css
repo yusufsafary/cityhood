@@ -99,21 +99,32 @@ a:hover { text-decoration: underline; }
 
 /* ---------- header ---------- */
 
+.topstrip {
+  background: var(--lime);
+  color: var(--ink);
+  font-family: "Space Mono", monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.strip-in { display: flex; justify-content: space-between; gap: 16px; padding-top: 6px; padding-bottom: 6px; }
+
 .site-head {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(7, 8, 7, 0.9);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+  background: rgba(7, 8, 7, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--lime-line);
 }
 
 .head-in {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 10px 18px;
+  gap: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -121,36 +132,82 @@ a:hover { text-decoration: underline; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 11px;
+  gap: 12px;
   color: var(--paper);
   margin-right: auto;
 }
 .brand:hover { text-decoration: none; }
-.brand img { width: 36px; height: 36px; border-radius: 8px; }
+.brand-chip {
+  display: grid;
+  place-items: center;
+  background: #0d0f0c;
+  border: 1px solid var(--lime-line);
+  border-radius: 11px;
+  padding: 4px;
+}
+.brand-chip img { width: 40px; height: 40px; border-radius: 7px; display: block; }
+.brand-lock { display: flex; flex-direction: column; line-height: 1.12; }
 .wordmark {
   font-family: "Archivo Black", sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .wordmark .wm-lime { color: var(--lime); }
+.brand-sub {
+  font-family: "Space Mono", monospace;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 3px;
+}
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 8px 20px;
+  gap: 8px 24px;
 }
 .site-nav a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
   font-family: "Space Mono", monospace;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--paper);
+  white-space: nowrap;
 }
+.site-nav a i { font-style: normal; font-size: 10px; color: var(--lime); }
 .site-nav a:hover { color: var(--lime); text-decoration: none; }
 .site-nav a[aria-current="page"] { color: var(--lime); }
+.btn-head {
+  background: var(--lime);
+  color: var(--ink);
+  border: 1px solid var(--lime);
+  border-radius: 9px;
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.btn-head:hover { text-decoration: none; filter: brightness(1.06); }
+.btn-head.is-disabled { background: transparent; color: var(--muted); border: 1px dashed rgba(182, 255, 46, 0.4); }
+
+@media (max-width: 719px) {
+  .head-in { padding-top: 10px; padding-bottom: 10px; gap: 12px; }
+  .brand-chip img { width: 34px; height: 34px; }
+  .wordmark { font-size: 17px; }
+  .brand-sub { font-size: 8.5px; }
+  .site-nav { gap: 8px 16px; }
+  .site-nav a { font-size: 11.5px; letter-spacing: 0.1em; }
+  .site-nav a i { display: none; }
+  .btn-head { display: none; }
+  .strip-r { display: none; }
+  .strip-in { justify-content: center; }
+}
 
 /* ---------- buttons ---------- */
 
@@ -527,4 +584,18 @@ html.js .rv.in { opacity: 1; transform: none; }
   table.econ td::before { content: attr(data-label); font-family: "Space Mono", monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted); text-align: left; flex: 0 0 auto; padding-top: 2px; }
   table.econ td:first-child { font-size: 19px; }
   table.econ td:first-child::before { padding-top: 6px; }
+}
+
+/* v5.1 header mobile fixes (end of file: wins the cascade) */
+.brand, .brand-chip, .brand-lock { flex: 0 0 auto; }
+.wordmark, .brand-sub { white-space: nowrap; }
+@media (max-width: 719px) {
+  .site-nav .btn-head { display: none; }
+  .site-nav { gap: 8px 12px; }
+  .site-nav a { font-size: 11px; }
+  .brand { gap: 9px; }
+  .brand-chip { padding: 3px; }
+  .brand-chip img { width: 30px; height: 30px; }
+  .wordmark { font-size: 15.5px; }
+  .brand-sub { font-size: 8px; letter-spacing: 0.16em; }
 }
