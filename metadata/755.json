@@ -1,0 +1,23 @@
+{
+ "name": "Cityhood #755",
+ "description": "One block of Cityhood: an isometric city-block diorama on Robinhood Chain. Matte black buildings, lime-lit windows, one owner per block. Minted on OpenSea via SeaDrop.",
+ "image": "https://cityhood.fun/img/nft/755.png",
+ "attributes": [
+  {
+   "trait_type": "Tier",
+   "value": "Block"
+  },
+  {
+   "trait_type": "Windows",
+   "value": "Steady"
+  },
+  {
+   "trait_type": "Avenue",
+   "value": "North-West"
+  },
+  {
+   "trait_type": "Density",
+   "value": "Low-rise"
+  }
+ ]
+}
