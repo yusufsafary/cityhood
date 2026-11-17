@@ -17,8 +17,8 @@
 <meta name="twitter:title" content="Cityhood · Every block has an owner">
 <meta name="twitter:description" content="4,333 city blocks on Robinhood Chain. Register for GTD and WL here, mint on OpenSea via SeaDrop.">
 <meta name="twitter:image" content="https://cityhood.fun/img/og.jpg">
-<link rel="stylesheet" href="/css/site.css?v=7">
-<link rel="stylesheet" href="/css/home.css?v=7">
+<link rel="stylesheet" href="/css/site.css?v=8">
+<link rel="stylesheet" href="/css/home.css?v=8">
 </head>
 <body>
 
@@ -81,9 +81,35 @@
           <span class="f-lab">Creator royalty</span>
         </div>
       </div>
+
+      <div class="countbar" data-countdown role="timer" aria-live="off">
+        <span class="sr-only">Mint stages today, 17 November, in UTC: GTD 16:00, WL 16:30, Public 17:00.</span>
+        <div class="cb-left">
+          <span class="cb-dot" aria-hidden="true"></span>
+          <span class="cb-label" data-cd-label>GTD opens in</span>
+          <span class="cb-stage" data-cd-stage>Stage 01 · GTD · Free · Max 1</span>
+        </div>
+        <div class="cb-time" data-cd-time aria-hidden="true">--:--:--</div>
+        <div class="cb-sched" aria-hidden="true">
+          <span><b>GTD</b> 16:00 · Free</span>
+          <span><b>WL</b> 16:30 · $0.50</span>
+          <span><b>Public</b> 17:00 · $1.50</span>
+          <span class="cb-utc">UTC · Today 17 Nov</span>
+        </div>
+      </div>
     </div>
   </section>
   <div class="marquee" aria-hidden="true"><div class="mtrack"><span>4,333 BLOCKS&nbsp;&nbsp;·&nbsp;&nbsp;ROBINHOOD CHAIN&nbsp;&nbsp;·&nbsp;&nbsp;MINT ON OPENSEA&nbsp;&nbsp;·&nbsp;&nbsp;GTD FREE&nbsp;&nbsp;·&nbsp;&nbsp;EVERY BLOCK HAS AN OWNER&nbsp;&nbsp;·&nbsp;&nbsp;</span><span>4,333 BLOCKS&nbsp;&nbsp;·&nbsp;&nbsp;ROBINHOOD CHAIN&nbsp;&nbsp;·&nbsp;&nbsp;MINT ON OPENSEA&nbsp;&nbsp;·&nbsp;&nbsp;GTD FREE&nbsp;&nbsp;·&nbsp;&nbsp;EVERY BLOCK HAS AN OWNER&nbsp;&nbsp;·&nbsp;&nbsp;</span></div></div>
+
+  <!-- LIVING GRID CANVAS -->
+  <section class="cityband" aria-label="Procedural simulation of the Cityhood grid at night">
+    <canvas id="citycanvas" aria-hidden="true"></canvas>
+    <span class="cityband-tag"><i aria-hidden="true"></i>Live · Procedural</span>
+    <div class="wrap cityband-cap">
+      <span class="cb2-l">Fig. 02 · Living grid · drawn in code, lit in real time</span>
+      <span class="cb2-r"><b data-lit>0</b> windows lit</span>
+    </div>
+  </section>
 
 
   <!-- DISTRICT GRID -->
@@ -192,7 +218,7 @@
         <p>Each Cityhood NFT is an isometric diorama of one city block on pure black. Scale decides rarity: a quiet block, a district with a plaza, or a landmark tower.</p>
       </div>
       <div class="tiers">
-        <figure class="tier rv">
+        <figure class="tier rv sel" data-tier="block" tabindex="0" role="button" aria-pressed="true" aria-label="Explore the Block tier">
           <span class="plate"><img src="/img/tier-block-sq.jpg?v=1" alt="Block tier artwork: one low-rise city block with lime windows" width="1200" height="1200" loading="lazy"></span>
           <div class="tier-body">
             <div class="tier-meta"><span class="tm-l">Plate 01 / 03</span><span class="tier-rarity">Common</span></div>
@@ -201,7 +227,7 @@
             <div class="tier-data"><span>Format · Diorama</span><span>Base · Black</span></div>
           </div>
         </figure>
-        <figure class="tier rv">
+        <figure class="tier rv" data-tier="district" tabindex="0" role="button" aria-pressed="false" aria-label="Explore the District tier">
           <span class="plate"><img src="/img/tier-district-sq.jpg?v=1" alt="District tier artwork: towers around a glowing lime plaza" width="1200" height="1200" loading="lazy"></span>
           <div class="tier-body">
             <div class="tier-meta"><span class="tm-l">Plate 02 / 03</span><span class="tier-rarity rare">Rare</span></div>
@@ -210,7 +236,7 @@
             <div class="tier-data"><span>Format · Diorama</span><span>Base · Black</span></div>
           </div>
         </figure>
-        <figure class="tier rv">
+        <figure class="tier rv" data-tier="landmark" tabindex="0" role="button" aria-pressed="false" aria-label="Explore the Landmark tier">
           <span class="plate"><img src="/img/tier-landmark-sq.jpg?v=1" alt="Landmark tier artwork: one monumental twisted tower over a block grid" width="1200" height="1200" loading="lazy"></span>
           <div class="tier-body">
             <div class="tier-meta"><span class="tm-l">Plate 03 / 03</span><span class="tier-rarity legendary">Legendary</span></div>
@@ -220,6 +246,13 @@
           </div>
         </figure>
       </div>
+      <div class="tier-readout" data-tier-readout role="status" aria-live="polite">
+        <span class="tr-idx" data-tr="idx">Plate 01 / 03</span>
+        <span class="tr-name" data-tr="name">Block</span>
+        <span class="tr-share" data-tr="share">Common · ≈70% of supply · ≈3,046 of 4,333</span>
+        <p class="tr-note" data-tr="note">Low-rise rows of lit windows and one lime corner store at street level. The everyday fabric of the grid, and the likeliest pull in the collection.</p>
+      </div>
+      <p class="tier-hint">Tier explorer · <b>tap a plate</b> to inspect it</p>
     </div>
   </section>
 
@@ -321,6 +354,7 @@
 
 <script src="/js/config.js?v=5"></script>
 <script src="/js/app.js?v=4"></script>
+<script src="/js/fx.js?v=1"></script>
 
   <div class="sticky-cta"><span>Registration<br>open now</span><a class="btn btn-lime" href="register">Register</a></div>
 </body>

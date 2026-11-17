@@ -17,7 +17,7 @@
 <meta name="twitter:title" content="Cityhood · Register for GTD and WL">
 <meta name="twitter:description" content="500 free GTD spots and 1,000 WL spots at $0.50, drawn by raffle. Mint on OpenSea via SeaDrop.">
 <meta name="twitter:image" content="https://cityhood.fun/img/og.jpg">
-<link rel="stylesheet" href="/css/site.css?v=7">
+<link rel="stylesheet" href="/css/site.css?v=8">
 </head>
 <body>
 
@@ -44,9 +44,24 @@
   <div class="wrap">
 
     <section class="page-head">
-      <p class="kicker">Registration</p>
+      <div class="ph-top"><p class="kicker">Registration</p><span class="page-idx">Doc. 01 / 05 · Register</span></div>
       <h1 class="display">GTD and WL spots</h1>
       <p>Registration for Cityhood mint stages happens on this page and nowhere else. Status right now: <strong style="color:var(--lime)">registration open</strong>. Registration closes today, 17 November, at 15:00 UTC; winners are drawn by raffle right after. Mint stages run today on OpenSea: GTD 16:00 UTC, WL 16:30 UTC, Public 17:00 UTC. Public mint needs no registration.</p>
+      <div class="countbar" data-countdown role="timer" aria-live="off">
+        <span class="sr-only">Mint stages today, 17 November, in UTC: GTD 16:00, WL 16:30, Public 17:00.</span>
+        <div class="cb-left">
+          <span class="cb-dot" aria-hidden="true"></span>
+          <span class="cb-label" data-cd-label>GTD opens in</span>
+          <span class="cb-stage" data-cd-stage>Stage 01 · GTD · Free · Max 1</span>
+        </div>
+        <div class="cb-time" data-cd-time aria-hidden="true">--:--:--</div>
+        <div class="cb-sched" aria-hidden="true">
+          <span><b>GTD</b> 16:00 · Free</span>
+          <span><b>WL</b> 16:30 · $0.50</span>
+          <span><b>Public</b> 17:00 · $1.50</span>
+          <span class="cb-utc">UTC · Today 17 Nov</span>
+        </div>
+      </div>
     </section>
 
     <section class="section" style="padding-top:36px">
@@ -203,5 +218,6 @@
 
 <script src="/js/config.js?v=5"></script>
 <script src="/js/app.js?v=4"></script>
+<script src="/js/fx.js?v=1"></script>
 </body>
 </html>
