@@ -1,6 +1,7 @@
 // Cityhood · shared behaviour
 (function () {
   "use strict";
+  document.documentElement.classList.add("js");
   var CFG = window.CITYHOOD || {};
   var ADDR_RE = /^0x[0-9a-fA-F]{40}$/;
 
@@ -195,6 +196,7 @@
 
   /* Scroll reveal */
   var rvEls = document.querySelectorAll(".rv");
+  setTimeout(function () { rvEls.forEach(function (el) { el.classList.add("in"); }); }, 1400);
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduceMotion || !("IntersectionObserver" in window)) {
     rvEls.forEach(function (el) { el.classList.add("in"); });
