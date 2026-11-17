@@ -7,6 +7,6 @@ window.CITYHOOD = {
   REG_WL_OPEN: false,
   REG_ENDPOINT: "",
   OPENSEA_URL: "",
-  X_URL: "",
+  X_URL: "https://x.com/cityhoodfun",
   CONTRACT: ""
 };

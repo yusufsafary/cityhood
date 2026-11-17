@@ -1,5 +1,6 @@
 Cityhood (CITY)
 Website: https://cityhood.fun
+X: https://x.com/cityhoodfun (@cityhoodfun)
 Tagline: Every block has an owner
 
 Summary
@@ -16,7 +17,7 @@ Unminted GTD and WL supply rolls into Public.
 
 Registration
 Registration for GTD and WL takes place at https://cityhood.fun/register
-Requirements: follow the project X account (handle to be announced) and repost the announcement post, then submit an EVM wallet address and X username.
+Requirements: follow the project X account (@cityhoodfun, https://x.com/cityhoodfun) and repost the announcement post, then submit an EVM wallet address and X username.
 Winners are chosen by raffle from valid registrations after registration closes. One registration per wallet per stage.
 Winner lists are published at https://cityhood.fun/data/status.json and can be checked on the Register page.
 
