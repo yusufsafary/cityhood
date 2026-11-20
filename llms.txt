@@ -24,17 +24,22 @@ Winner lists are published at https://cityhood.fun/data/status.json and can be c
 Royalty
 5% creator royalty (ERC-2981).
 
+Utility token ($CITY)
+$CITY is the utility token of Cityhood on Robinhood Chain. Every block claims $CITY once, at a rate set by its tier: Block 250,000, District 500,000, Landmark 2,500,000. A claim belongs to the block: if an unclaimed block is sold, the claim travels with it. Fixed supply 10,000,000,000. Allocation: block claims 20% (2,000,000,000, covering the full 1,853,000,000 claim pool), liquidity 10%, city treasury 60%, team 10%. Unclaimed $CITY is burned when the claim window closes. The $CITY contract is in preparation and has not been deployed yet; the claim opens after the mint.
+
 Contracts
-SeaDrop drop contract: not yet deployed; the address will be announced on this site before mint.
+Cityhood NFT (SeaDrop): 0x306073f5338Ca906de252A9Bf055ad72733820C3
+$CITY token: not yet deployed; the address will be announced on this site.
 Chain explorer: https://robinhoodchain.blockscout.com
 
 Status
-Registration is open for GTD and WL spots on the Register page and closes 17 November at 15:00 UTC; winners are drawn by raffle right after. Mint stages run 17 November on OpenSea via SeaDrop: GTD 16:00 UTC, WL 16:30 UTC, Public 17:00 UTC. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
+Registration is closed and the raffle is drawn: no valid entries were received, so no GTD or WL winners were drawn and the full 4,333 supply opens in the Public stage. Drop configuration is in progress; the mint date is announced on X (@cityhoodfun) and on this site first. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
 
 Pages
 - Home: https://cityhood.fun/
 - Register: https://cityhood.fun/register
 - About: https://cityhood.fun/about
+- Utility ($CITY): https://cityhood.fun/utility
 - Terms of Use: https://cityhood.fun/terms
 - Privacy Policy: https://cityhood.fun/privacy
 - Disclaimer: https://cityhood.fun/disclaimer

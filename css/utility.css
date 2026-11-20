@@ -1,0 +1,65 @@
+/* Cityhood · utility page ($CITY) */
+.estimator {
+  margin-top: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  padding: 20px;
+  display: grid;
+  gap: 14px;
+  max-width: 680px;
+}
+.est-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.est-row label {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--paper);
+}
+.est-row label span {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.est-row input {
+  width: 110px;
+  background: var(--field);
+  border: 1px solid var(--field-line);
+  border-radius: 8px;
+  color: var(--paper);
+  font-family: "Space Mono", monospace;
+  font-size: 17px;
+  padding: 10px 12px;
+  text-align: right;
+}
+.est-row input:focus { outline: 2px solid var(--lime); outline-offset: 1px; }
+.est-total {
+  border-top: 1px dashed var(--lime-line);
+  padding-top: 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.est-total span {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.est-total strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(24px, 6vw, 34px);
+  color: var(--lime);
+}

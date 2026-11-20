@@ -494,3 +494,52 @@
   .tier { transition: none; }
   .tier-readout.flash .tr-name { animation: none; }
 }
+
+/* ==== zoning permit stamps (stages) ==== */
+.stage-card { position: relative; }
+.stamp {
+  position: absolute; top: 16px; right: 16px;
+  transform: rotate(5deg);
+  border: 2px dashed var(--lime-line);
+  color: var(--lime);
+  font-family: "Space Mono", monospace;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 5px 10px; border-radius: 4px;
+  background: rgba(7, 8, 7, 0.72);
+  pointer-events: none;
+}
+.stamp-open { border-style: solid; }
+
+/* ==== utility · $CITY claim table ==== */
+.claim-table {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--panel);
+}
+.ct-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.7fr 1.3fr 1.1fr;
+  gap: 10px;
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--line);
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  color: var(--soft);
+  align-items: baseline;
+}
+.ct-row:last-child { border-bottom: none; }
+.ct-head {
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--muted); background: var(--panel-2);
+}
+.ct-tier { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 17px; color: var(--paper); }
+.ct-gold { color: var(--lime); }
+.ct-amt { color: var(--lime); font-weight: 700; }
+.ct-total { background: var(--lime-soft); color: var(--paper); font-weight: 700; }
+.util-note { color: var(--muted); max-width: 68ch; margin-top: 18px; }
+@media (max-width: 640px) {
+  .ct-row { grid-template-columns: 1fr 1fr; font-size: 13px; row-gap: 4px; }
+  .ct-head { display: none; }
+  .stamp { position: static; transform: none; display: inline-block; margin-bottom: 10px; }
+}
