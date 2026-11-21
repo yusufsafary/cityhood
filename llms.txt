@@ -43,6 +43,10 @@ Pages
 - Whitepaper: https://cityhood.fun/whitepaper
 - Docs: https://cityhood.fun/docs
 - Swap: https://cityhood.fun/swap
+- Games: https://cityhood.fun/games
 - Terms of Use: https://cityhood.fun/terms
 - Privacy Policy: https://cityhood.fun/privacy
 - Disclaimer: https://cityhood.fun/disclaimer
+
+Games
+Cityhood Games is the play layer of the city: an upcoming utility for block holders, in preparation. Status: coming soon. Blocks held in a wallet are the pieces; holders play first. Details are announced on X (@appcityhood) and at https://cityhood.fun/games first.
