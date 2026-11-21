@@ -38,7 +38,7 @@ Pages
 - Home: https://cityhood.fun/
 - Raffle: https://cityhood.fun/register
 - About: https://cityhood.fun/about
-- Utility ($CITY): https://cityhood.fun/utility
+- Token ($CITY): https://cityhood.fun/token
 - Tokenomics: https://cityhood.fun/tokenomics
 - Whitepaper: https://cityhood.fun/whitepaper
 - Docs: https://cityhood.fun/docs
