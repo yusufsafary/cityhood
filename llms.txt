@@ -15,11 +15,10 @@ Stages (total supply 4,333)
 - Public: 2,833 supply, $1.50 (paid in ETH equivalent at mint), max 3 per wallet, open to everyone, no registration.
 Unminted GTD and WL supply rolls into Public.
 
-Registration
-Registration for GTD and WL takes place at https://cityhood.fun/register
-Requirements: follow the project X account (@appcityhood, https://x.com/appcityhood) and repost the announcement post, then submit an EVM wallet address and X username.
-Winners are chosen by raffle from valid registrations after registration closes. One registration per wallet per stage.
-Winner lists are published at https://cityhood.fun/data/status.json and can be checked on the Register page.
+Raffle (GTD and WL allocation)
+Allocation is raffled on X. To enter: follow the project X account (@appcityhood, https://x.com/appcityhood), repost the official raffle post, and comment one EVM wallet address on that post. One comment is an entry for both stages (500 GTD drawn first, then 1,000 WL).
+After entries close, the final entrant list is published on this site, and winners are drawn with a public block-hash seed so the draw can be recomputed by anyone.
+Winner lists are published at https://cityhood.fun/data/status.json and can be checked at https://cityhood.fun/register. Public mint needs no entry.
 
 Royalty
 5% creator royalty (ERC-2981).
@@ -33,11 +32,11 @@ $CITY token: not yet deployed; the address will be announced on this site.
 Chain explorer: https://robinhoodchain.blockscout.com
 
 Status
-Registration is closed and the raffle is drawn: no valid entries were received, so no GTD or WL winners were drawn and the full 4,333 supply opens in the Public stage. Drop configuration is in progress; the mint date is announced on X (@appcityhood) and on this site first. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
+GTD and WL allocation is raffled on X (see Raffle section); the raffle page is https://cityhood.fun/register. Drop configuration is in progress; the mint date is announced on X (@appcityhood) and on this site first. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
 
 Pages
 - Home: https://cityhood.fun/
-- Register: https://cityhood.fun/register
+- Raffle: https://cityhood.fun/register
 - About: https://cityhood.fun/about
 - Utility ($CITY): https://cityhood.fun/utility
 - Tokenomics: https://cityhood.fun/tokenomics
