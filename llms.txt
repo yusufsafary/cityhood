@@ -40,6 +40,10 @@ Pages
 - Register: https://cityhood.fun/register
 - About: https://cityhood.fun/about
 - Utility ($CITY): https://cityhood.fun/utility
+- Tokenomics: https://cityhood.fun/tokenomics
+- Whitepaper: https://cityhood.fun/whitepaper
+- Docs: https://cityhood.fun/docs
+- Swap: https://cityhood.fun/swap
 - Terms of Use: https://cityhood.fun/terms
 - Privacy Policy: https://cityhood.fun/privacy
 - Disclaimer: https://cityhood.fun/disclaimer
