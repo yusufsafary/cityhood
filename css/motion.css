@@ -86,3 +86,13 @@ html:not(.js) .abar-fill { width: var(--w); }
   html { scroll-behavior: auto; }
   .abar-fill { transition: none; width: var(--w); }
 }
+
+/* audit fixes 2026-11-21 */
+.econ td, .econ th { overflow-wrap: anywhere; }
+.econ td a { overflow-wrap: anywhere; }
+@media (min-width: 861px) {
+  .hero-art { align-self: start; }
+}
+html.fx-done .hero .hchip, html.fx-done .hero .mega, html.fx-done .hero .tagline,
+html.fx-done .hero .hero-sub, html.fx-done .hero .hero-cta, html.fx-done .hero .hero-art,
+html.fx-done .hero .facts, html.fx-done .hero .countbar { animation: none; }

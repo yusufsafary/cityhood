@@ -32,6 +32,7 @@
       if (k < 1) requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
+    setTimeout(function () { el.textContent = comma ? target.toLocaleString("en-US") : String(target); }, 1500);
   }
   var facts = document.querySelector(".facts");
   if (facts && "IntersectionObserver" in window) {
@@ -76,3 +77,8 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 })();
+
+  /* safety: force hero entrance to its finished state */
+  window.addEventListener("load", function () {
+    setTimeout(function () { document.documentElement.classList.add("fx-done"); }, 1600);
+  });
