@@ -13,8 +13,8 @@
     var cdTime = cdRoot.querySelector("[data-cd-time]");
     var STAGES = [
       { label: "GTD opens in", stage: "Stage 01 · GTD · Free · Max 1", at: Date.UTC(2026, 10, 17, 16, 0, 0) },
-      { label: "WL opens in", stage: "Stage 02 · WL · $0.50 · Max 2", at: Date.UTC(2026, 10, 17, 16, 30, 0) },
-      { label: "Public opens in", stage: "Stage 03 · Public · $1.50 · Max 3", at: Date.UTC(2026, 10, 17, 17, 0, 0) }
+      { label: "WL opens in", stage: "Stage 02 · WL · $0.50 · Max 15", at: Date.UTC(2026, 10, 17, 16, 30, 0) },
+      { label: "Public opens in", stage: "Stage 03 · Public · $1.50 · Max 25", at: Date.UTC(2026, 10, 17, 17, 0, 0) }
     ];
     function pad(n) { return (n < 10 ? "0" : "") + n; }
     function fmt(ms) {

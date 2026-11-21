@@ -11,8 +11,8 @@ Minting happens only on OpenSea, through the SeaDrop drop protocol. This website
 
 Stages (total supply 4,333)
 - GTD: 500 spots, free, max 1 per wallet, guaranteed allocation for raffle winners.
-- WL: 1,000 spots, $0.50 (paid in ETH equivalent at mint), max 2 per wallet, raffle winners.
-- Public: 2,833 supply, $1.50 (paid in ETH equivalent at mint), max 3 per wallet, open to everyone, no registration.
+- WL: 1,000 spots, $0.50 (paid in ETH equivalent at mint), max 15 per wallet, raffle winners.
+- Public: 2,833 supply, $1.50 (paid in ETH equivalent at mint), max 25 per wallet, open to everyone, no registration.
 Unminted GTD and WL supply rolls into Public.
 
 Raffle (GTD and WL allocation)

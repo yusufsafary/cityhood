@@ -138,7 +138,7 @@
             checkResult.className = "check-result show win-gtd";
             checkResult.innerHTML =
               '<div class="cr-title">GTD winner, WL winner</div>' +
-              "<p>This wallet won both stages: one guaranteed free GTD mint (max 1) and WL access at $0.50 (max 2). Mint on OpenSea when your stage opens.</p>";
+              "<p>This wallet won both stages: one guaranteed free GTD mint (max 1) and WL access at $0.50 (max 15). Mint on OpenSea when your stage opens.</p>";
           } else if (inGtd) {
             checkResult.className = "check-result show win-gtd";
             checkResult.innerHTML =
@@ -148,12 +148,12 @@
             checkResult.className = "check-result show win-wl";
             checkResult.innerHTML =
               '<div class="cr-title">WL winner</div>' +
-              "<p>This wallet can mint in the WL stage at $0.50, max 2 per wallet. Mint on OpenSea when the WL stage opens.</p>";
+              "<p>This wallet can mint in the WL stage at $0.50, max 15 per wallet. Mint on OpenSea when the WL stage opens.</p>";
           } else {
             checkResult.className = "check-result show info";
             checkResult.innerHTML =
               '<div class="cr-title">Not on the winner lists</div>' +
-              "<p>No GTD or WL spot for this wallet. Public mint needs no registration: 2,833 supply at $1.50, max 3 per wallet, on OpenSea.</p>";
+              "<p>No GTD or WL spot for this wallet. Public mint needs no registration: 2,833 supply at $1.50, max 25 per wallet, on OpenSea.</p>";
           }
         })
         .catch(function () {
