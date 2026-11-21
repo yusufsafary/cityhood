@@ -20,8 +20,10 @@
 <link rel="stylesheet" href="/css/site.css?v=9">
 <link rel="stylesheet" href="/css/home.css?v=9">
 <link rel="stylesheet" href="/css/motion.css?v=2">
+<link rel="stylesheet" href="/css/home2.css?v=1">
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <div class="topstrip"><div class="wrap strip-in"><span>Robinhood Chain &middot; ID 4663</span><span class="strip-r">Mint on OpenSea &middot; SeaDrop</span></div></div>
 <header class="site-head">
@@ -85,18 +87,31 @@
         </div>
       </div>
 
-      <div class="countbar" role="status">
-        <div class="cb-left">
-          <span class="cb-dot" aria-hidden="true"></span>
-          <span class="cb-label">Mint day · today</span>
-          <span class="cb-stage">Mint opens today · Saturday 21 November 2026 · on OpenSea via SeaDrop</span>
+      <div class="console rv" id="mintconsole">
+        <div class="con-head">
+          <span class="con-dot" data-con-dot aria-hidden="true"></span>
+          <span class="con-title">Public mint console</span>
+          <span class="con-badge" data-con-badge>Scheduled · 21 Nov 2026</span>
         </div>
-        <div class="cb-time" aria-hidden="true">TODAY</div>
-        <div class="cb-sched" aria-hidden="true">
-          <span><b>GTD</b> Free · raffle on X</span>
-          <span><b>WL</b> $0.50 · raffle on X</span>
-          <span><b>Public</b> $1.50 · Max 3</span>
-          <span class="cb-utc">21 Nov 2026 · stage times on X</span>
+        <div class="con-main">
+          <div class="con-count">
+            <span class="con-label" data-con-label>Public opens in</span>
+            <span class="con-time" data-con-time>--:--:--</span>
+            <span class="con-sub" data-con-sub>Today · Saturday 21 November 2026 · 14:00 UTC · OpenSea via SeaDrop</span>
+          </div>
+          <div class="con-side">
+            <div class="con-supply">
+              <div class="con-supply-top"><span>Minted</span><b><span data-con-minted>0</span> / 4,333</b></div>
+              <div class="con-bar"><i data-con-bar></i></div>
+              <div class="con-supply-sub"><span data-con-left>4,333 blocks remain</span><span data-con-pct>0%</span></div>
+            </div>
+            <div class="con-rows">
+              <div class="con-row"><span>Public price</span><b data-con-price>$1.50 · 0.000923 ETH</b></div>
+              <div class="con-row"><span>GTD + WL</span><b>Raffle on X · winners drawn publicly</b></div>
+              <div class="con-row"><span>Chain</span><b>Robinhood Chain · 4663</b></div>
+            </div>
+            <a class="btn btn-lime con-btn waiting" href="#" data-opensea data-con-btn>Mint opens 14:00 UTC</a>
+          </div>
         </div>
       </div>
     </div>
@@ -106,7 +121,7 @@
   <!-- LIVING GRID CANVAS -->
   <section class="cityband" aria-label="Procedural simulation of the Cityhood grid at night">
     <canvas id="citycanvas" aria-hidden="true"></canvas>
-    <span class="cityband-tag"><i aria-hidden="true"></i>Live · Procedural</span>
+    <span class="cityband-tag"><i aria-hidden="true"></i>Live · Procedural · Move across it</span>
     <div class="wrap cityband-cap">
       <span class="cb2-l">Fig. 02 · Living grid · drawn in code, lit in real time</span>
       <span class="cb2-r"><b data-lit>0</b> windows lit</span>
@@ -190,6 +205,7 @@
             <div class="srow"><span class="k">Allocation</span><span class="v">2,833 supply</span></div>
             <div class="srow"><span class="k">Per wallet</span><span class="v">Max 3</span></div>
             <div class="srow"><span class="k">Access</span><span class="v">Open to all</span></div>
+            <div class="srow"><span class="k">Opens</span><span class="v" data-pub-state>Today · 14:00 UTC</span></div>
           </div>
           <p class="stage-note">Open mint on OpenSea, paid in ETH equivalent. No registration, no allowlist. First come, first served until sold out.</p>
         </article>
@@ -276,6 +292,25 @@
         <div class="ct-row" role="row"><span class="ct-tier ct-gold">Landmark</span><span>224</span><span class="ct-amt">2,500,000 $CITY</span><span>560,000,000</span></div>
         <div class="ct-row ct-total" role="row"><span>All tiers</span><span>4,333</span><span>Once per block</span><span>1,853,000,000</span></div>
       </div>
+      <div class="haul rv">
+        <div class="haul-head"><span class="haul-title">Build a haul</span><span class="haul-sub">Tap + and − · price a claim before you mint</span></div>
+        <div class="haul-rows">
+          <div class="haul-row" data-haul="block" data-rate="250000" data-max="3046">
+            <span class="haul-tier">Block</span><span class="haul-rate">250,000 $CITY each</span>
+            <span class="haul-ctl"><button type="button" data-dec aria-label="Remove one Block">−</button><b data-n>0</b><button type="button" data-inc aria-label="Add one Block">+</button></span>
+          </div>
+          <div class="haul-row" data-haul="district" data-rate="500000" data-max="1063">
+            <span class="haul-tier">District</span><span class="haul-rate">500,000 $CITY each</span>
+            <span class="haul-ctl"><button type="button" data-dec aria-label="Remove one District">−</button><b data-n>0</b><button type="button" data-inc aria-label="Add one District">+</button></span>
+          </div>
+          <div class="haul-row" data-haul="landmark" data-rate="2500000" data-max="224">
+            <span class="haul-tier">Landmark</span><span class="haul-rate">2,500,000 $CITY each</span>
+            <span class="haul-ctl"><button type="button" data-dec aria-label="Remove one Landmark">−</button><b data-n>0</b><button type="button" data-inc aria-label="Add one Landmark">+</button></span>
+          </div>
+        </div>
+        <div class="haul-total"><span><b data-haul-blocks>0</b> blocks</span><span class="haul-amt"><b data-haul-amt>0</b> $CITY</span></div>
+        <p class="haul-note">Estimate only. A claim follows each block and pays once, after the claim opens.</p>
+      </div>
       <p class="util-note rv">Status: $CITY contract is in preparation. The claim opens after the mint, from a 2,000,000,000 $CITY claim allocation (20% of supply). Unclaimed $CITY is burned when the claim window closes.</p>
       <div class="hero-cta rv">
         <a class="btn btn-lime" href="token">Open token page</a>
@@ -296,7 +331,7 @@
         <div class="step rv" data-n="01">
           <span class="step-no">Step 01</span>
           <h3>Own a block</h3>
-          <p>Mint on the official OpenSea drop page via SeaDrop when the Public stage opens. Full 4,333 supply, max 3 per wallet, $1.50 in ETH equivalent.</p>
+          <p>Mint on the official OpenSea drop page via SeaDrop. Public opens today at 14:00 UTC: full 4,333 supply, max 3 per wallet, $1.50 in ETH equivalent.</p>
         </div>
         <div class="step rv" data-n="02">
           <span class="step-no">Step 02</span>
@@ -322,8 +357,8 @@
           <span></span><span></span><span></span>
         </div>
         <p class="kicker">Status</p>
-        <h2 class="display">City is built. Drop comes next.</h2>
-        <p>GTD and WL permits are raffled on X: comment your wallet on the official post to enter. Public mint follows, open to all. Drop configuration is in progress; dates are announced on X first. Every minted block then earns its $CITY claim.</p>
+        <h2 class="display">Public mint opens today.</h2>
+        <p>Public stage is configured on-chain and opens today at 14:00 UTC, open to all, max 3 per wallet. GTD and WL permits are raffled on X: comment your wallet on the official post to enter, winners drawn publicly. Every minted block then earns its $CITY claim.</p>
         <div class="hero-cta">
           <a class="btn btn-lime" href="token">Explore $CITY token</a>
           <a class="btn btn-ghost" href="register">Enter the raffle</a>
@@ -390,7 +425,8 @@
 <script src="/js/config.js?v=7"></script>
 <script src="/js/app.js?v=4"></script>
 <script src="/js/motion.js?v=2"></script>
-<script src="/js/fx.js?v=1"></script>
+<script src="/js/fx.js?v=2"></script>
+<script src="/js/live.js?v=1"></script>
 
   <div class="sticky-cta"><span>Every block<br>earns $CITY</span><a class="btn btn-lime" href="token">Token</a></div>
 </body>

@@ -123,6 +123,20 @@
     var windows = [];
     var running = false, rafId = 0, inView = false;
     var wave = null, nextWaveAt = 0, frame = 0, lastLit = -1;
+    var pointer = { x: -9999, y: -9999, active: false };
+    band.addEventListener("pointermove", function (e) {
+      var r = canvas.getBoundingClientRect();
+      pointer.x = e.clientX - r.left;
+      pointer.y = e.clientY - r.top;
+      pointer.active = true;
+      if (!running && inView && !document.hidden) start();
+    });
+    band.addEventListener("pointerleave", function () { pointer.active = false; });
+    band.addEventListener("pointerdown", function (e) {
+      var r = canvas.getBoundingClientRect();
+      wave = { pos: (e.clientX - r.left) - 60, amp: 1 };
+      if (!running && inView && !document.hidden) start();
+    });
 
     function mulberry32(a) {
       return function () {
@@ -256,6 +270,13 @@
           var d = w.s - wave.pos;
           var boost = wave.amp * Math.exp(-(d * d) / (2 * 75 * 75));
           if (boost > 0.02) { a = Math.min(1, a + boost); hot = boost > 0.3; }
+        }
+        if (pointer.active && !staticOnly) {
+          var pcx = (w.pts[0][0] + w.pts[2][0]) / 2;
+          var pcy = (w.pts[0][1] + w.pts[2][1]) / 2;
+          var pdx = pcx - pointer.x, pdy = pcy - pointer.y;
+          var pb = 0.95 * Math.exp(-(pdx * pdx + pdy * pdy) / (2 * 95 * 95));
+          if (pb > 0.02) { a = Math.min(1, a + pb); if (pb > 0.35) hot = true; }
         }
         if (a > 0.04) {
           if (a > 0.4) lit++;
