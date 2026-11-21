@@ -7,6 +7,6 @@ window.CITYHOOD = {
   REG_WL_OPEN: false,
   REG_ENDPOINT: "https://formsubmit.co/ajax/appurbanova@gmail.com",
   OPENSEA_URL: "",
-  X_URL: "https://x.com/cityhoodfun",
+  X_URL: "https://x.com/appcityhood",
   CONTRACT: ""
 };
