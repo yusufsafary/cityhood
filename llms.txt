@@ -32,7 +32,7 @@ $CITY token: not yet deployed; the address will be announced on this site.
 Chain explorer: https://robinhoodchain.blockscout.com
 
 Status
-GTD and WL allocation is raffled on X (see Raffle section); the raffle page is https://cityhood.fun/register. Mint day is today, Saturday 21 November 2026, on OpenSea via SeaDrop; exact stage times are announced on X (@appcityhood) first. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
+GTD and WL allocation is raffled on X (see Raffle section); the raffle page is https://cityhood.fun/register. Public mint opened Saturday 21 November 2026. GTD and WL mint today, Sunday 22 November 2026, on OpenSea via SeaDrop; exact stage times are announced on X (@appcityhood) first. Any date or mint link not published on cityhood.fun or the official project X account is unofficial.
 
 Pages
 - Home: https://cityhood.fun/
