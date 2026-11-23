@@ -8,5 +8,6 @@ window.CITYHOOD = {
   REG_ENDPOINT: "https://formsubmit.co/ajax/appurbanova@gmail.com",
   OPENSEA_URL: "",
   X_URL: "https://x.com/appcityhood",
-  CONTRACT: ""
+  WAVES: { gtd: "", wl: "", pub: "" },
+  CONTRACT: "0x306073f5338Ca906de252A9Bf055ad72733820C3"
 };

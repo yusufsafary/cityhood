@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cityhood · Raffle on X</title>
-<meta name="description" content="Cityhood GTD and WL allocation is raffled on X. Follow @appcityhood, repost the official post, and comment your wallet to enter. Winners are drawn publicly.">
+<title>Cityhood · Submit your wallet for tonight's mint</title>
+<meta name="description" content="Cityhood mints tonight in three waves: GTD, WL, then Public, 30 minutes apart. Submit your wallet on this page, no tasks. Allocation follows submission order.">
 <link rel="icon" href="/img/logo.png?v=1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cityhood">
-<meta property="og:title" content="Cityhood · Raffle on X">
-<meta property="og:description" content="500 free GTD spots and 1,000 WL spots at $0.50, raffled on X. Comment your wallet on the official post to enter.">
+<meta property="og:title" content="Cityhood · Mint tonight">
+<meta property="og:description" content="Mint tonight in three waves, 30 minutes apart. Submit your wallet here, no tasks: first 500 GTD free, next 1,000 WL at $0.50, then Public.">
 <meta property="og:url" content="https://cityhood.fun/register">
 <meta property="og:image" content="https://cityhood.fun/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@appcityhood">
-<meta name="twitter:title" content="Cityhood · Raffle on X">
-<meta name="twitter:description" content="500 free GTD spots and 1,000 WL spots at $0.50, raffled on X. Comment your wallet on the official post to enter.">
+<meta name="twitter:title" content="Cityhood · Mint tonight">
+<meta name="twitter:description" content="Mint tonight in three waves, 30 minutes apart. Submit your wallet here, no tasks: first 500 GTD free, next 1,000 WL at $0.50, then Public.">
 <meta name="twitter:image" content="https://cityhood.fun/img/og.jpg">
 <link rel="stylesheet" href="/css/site.css?v=9">
 <link rel="stylesheet" href="/css/motion.css?v=2">
@@ -47,34 +47,37 @@
   <div class="wrap">
 
     <section class="page-head">
-      <div class="ph-top"><p class="kicker">Raffle</p><span class="page-idx">Doc. 01 / 11 · Raffle</span></div>
-      <h1 class="display">Raffle runs on X</h1>
-      <p>GTD and WL allocation for the Cityhood mint is raffled on X, not on this site. There is no form here anymore: you enter by commenting your wallet address on the official raffle post. This page explains entry, the draw, and where winners are published.</p>
-      <div class="hero-cta" style="margin-top:22px">
-        <a class="btn btn-lime" href="#" data-x-link>Go to @appcityhood on X</a>
-        <a class="btn btn-ghost" href="about">About the project</a>
-      </div>
+      <div class="ph-top"><p class="kicker">Mint tonight</p><span class="page-idx">Doc. 01 / 11 · Register</span></div>
+      <h1 class="display">Submit your wallet. No tasks.</h1>
+      <p>Cityhood mints tonight, Monday 23 November 2026, in three waves on OpenSea via SeaDrop: <b>GTD first, WL 30 minutes later, Public 30 minutes after WL</b>. There is no follow, no repost, no raffle. You submit one wallet address on this page and allocation follows submission order: the first 500 wallets take GTD, the next 1,000 take WL, everyone else mints in Public.</p>
+      <p class="reg-note" id="wave-times">Wave times (UTC) are confirmed on <a href="#" data-x-link>@appcityhood</a> and on this page before the first wave opens. Submissions close shortly before the GTD wave so the lists can be published.</p>
     </section>
 
     <section class="section" style="padding-top:36px">
       <div class="sec-head">
-        <p class="kicker">Entry</p>
-        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">How to enter</h2>
+        <p class="kicker">Wallet submission</p>
+        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">One form, one wallet</h2>
+        <p>Submissions are delivered to the project inbox in arrival order. One submission per wallet: duplicates keep the earliest position. Use a wallet you control, because allocation is issued to the exact address submitted and cannot be swapped.</p>
       </div>
-      <ul class="req-list">
-        <li><b>Follow the project X account.</b> <span>Follow <a href="#" data-x-link>@appcityhood</a> on X. Entries from non-followers do not qualify.</span></li>
-        <li><b>Repost the official raffle post.</b> <span>Repost, not just a like.</span></li>
-        <li><b>Comment your wallet address.</b> <span>One comment on the official post with one EVM wallet address (0x...). That comment is your entry for both stages.</span></li>
-        <li><b>Use one wallet you control.</b> <span>Winners mint from the exact address in their comment. Addresses cannot be swapped after the draw.</span></li>
-      </ul>
-      <p class="reg-note"><strong style="color:var(--lime)">GTD and WL mint today, Sunday 22 November 2026</strong>, on OpenSea via SeaDrop. Stage times are announced on X first. The official raffle post is published by @appcityhood only. Entry deadlines are stated in that post, in UTC. Any other post, account, or site collecting wallet addresses for Cityhood allocation is unofficial.</p>
+      <article class="card reg-card" style="max-width:640px">
+        <div class="stage-top">
+          <span class="stage-name display" style="font-size:24px">Register</span>
+          <span class="stage-price display" style="font-size:24px;color:var(--lime)">Open now</span>
+        </div>
+        <form class="reg-form" id="tonight-form" novalidate>
+          <label class="form-label" for="tw-wallet">EVM wallet address (Robinhood Chain)</label>
+          <input id="tw-wallet" name="wallet" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="0x...">
+          <button class="btn btn-lime" type="submit" style="margin-top:14px">Submit wallet</button>
+          <p class="form-msg" id="tw-msg" role="status"></p>
+        </form>
+        <p class="reg-note">This form never asks for a signature, a seed phrase, or a wallet connection. It only records the address you type.</p>
+      </article>
     </section>
 
     <section class="section" style="padding-top:8px">
       <div class="sec-head">
-        <p class="kicker">Prizes</p>
-        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">Permits issued</h2>
-        <p>Two permit types, drawn from one entry list. Winning GTD does not block a WL win.</p>
+        <p class="kicker">Tonight</p>
+        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">Three waves, 30 minutes apart</h2>
       </div>
       <div class="reg-grid">
         <article class="card reg-card">
@@ -83,11 +86,11 @@
             <span class="stage-price display" style="font-size:24px;color:var(--lime)">Free</span>
           </div>
           <div class="reg-facts">
+            <span>Wave <b>1</b></span>
             <span>Allocation <b>500 spots</b></span>
             <span>Cap <b>max 1 / wallet</b></span>
-            <span>Allocation <b>guaranteed</b></span>
           </div>
-          <p class="reg-note">A GTD win guarantees one free mint in the GTD stage on OpenSea.</p>
+          <p class="reg-note">First 500 wallets submitted. Guaranteed one free mint in the GTD wave.</p>
         </article>
         <article class="card reg-card">
           <div class="stage-top">
@@ -95,25 +98,24 @@
             <span class="stage-price display" style="font-size:24px;color:var(--lime)">$0.50</span>
           </div>
           <div class="reg-facts">
+            <span>Wave <b>2 · GTD + 30 min</b></span>
             <span>Allocation <b>1,000 spots</b></span>
             <span>Cap <b>max 15 / wallet</b></span>
-            <span>Paid <b>in ETH at mint</b></span>
           </div>
-          <p class="reg-note">A WL win unlocks the $0.50 stage on OpenSea, ahead of Public.</p>
+          <p class="reg-note">Next 1,000 wallets submitted. Paid in ETH at mint, ahead of Public.</p>
         </article>
-      </div>
-      <p class="reg-note">Unminted GTD and WL supply rolls into Public (2,833 supply, $1.50, max 25 per wallet, open to everyone, no entry needed).</p>
-    </section>
-
-    <section class="section" style="padding-top:8px">
-      <div class="sec-head">
-        <p class="kicker">The draw</p>
-        <h2 class="display" style="font-size:clamp(24px,5vw,34px)">How winners are drawn</h2>
-      </div>
-      <div class="prose">
-        <p>When entries close, all wallet addresses from the comments are collected. Duplicates and invalid addresses are removed, and the final entrant list is published on this site before the draw, so anyone can check their entry is in.</p>
-        <p>Winners are drawn with a public seed: the hash of a specific future block, fixed by block number in advance. The draw is reproducible: given the published entrant list and the seed, anyone can recompute the same winners. 500 GTD winners are drawn first, then 1,000 WL winners from the same list.</p>
-        <p>Winner lists are published at <a href="/data/status.json">cityhood.fun/data/status.json</a>, announced on X, and checkable below.</p>
+        <article class="card reg-card">
+          <div class="stage-top">
+            <span class="stage-name display" style="font-size:24px">Public</span>
+            <span class="stage-price display" style="font-size:24px;color:var(--lime)">$1.50</span>
+          </div>
+          <div class="reg-facts">
+            <span>Wave <b>3 · WL + 30 min</b></span>
+            <span>Supply <b>2,833</b></span>
+            <span>Cap <b>max 25 / wallet</b></span>
+          </div>
+          <p class="reg-note">Open to everyone, no submission needed. Unminted GTD and WL supply rolls into Public.</p>
+        </article>
       </div>
     </section>
 
@@ -121,7 +123,7 @@
       <div class="sec-head">
         <p class="kicker">Status checker</p>
         <h2 class="display" style="font-size:clamp(24px,5vw,34px)">Check your wallet</h2>
-        <p>After the draw, paste any wallet address to check for a GTD or WL spot.</p>
+        <p>Once submissions close, the GTD and WL lists are published on this site in submission order. Paste any wallet address to check its wave.</p>
       </div>
       <div class="checker rv">
         <div class="check-row">
@@ -130,12 +132,11 @@
         </div>
         <div class="check-result" id="check-result" role="status"></div>
       </div>
-      <p class="reg-note">Checker reads the published winner lists only. It never asks for a signature and never connects to your wallet.</p>
+      <p class="reg-note">Checker reads the published lists only. It never asks for a signature and never connects to your wallet.</p>
     </section>
 
   </div>
 </main>
-
 
 <footer class="site-foot">
   <div class="wrap">
@@ -153,7 +154,7 @@
         <h3>Project</h3>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="register">Raffle</a></li>
+          <li><a href="register">Register</a></li>
           <li><a href="about">About</a></li>
           <li><a href="token">Token · $CITY</a></li>
           <li><a href="tokenomics">Tokenomics</a></li>
@@ -190,8 +191,34 @@
   </div>
 </footer>
 
-<script src="/js/config.js?v=7"></script>
+<script src="/js/config.js?v=8"></script>
 <script src="/js/app.js?v=5"></script>
 <script src="/js/motion.js?v=2"></script>
+<script>
+(function () {
+  var form = document.getElementById("tonight-form");
+  if (!form) return;
+  var msg = document.getElementById("tw-msg");
+  var ADDR = /^0x[0-9a-fA-F]{40}$/;
+  function say(t, kind) { msg.textContent = t; msg.className = "form-msg" + (kind ? " " + kind : ""); }
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var addr = document.getElementById("tw-wallet").value.trim();
+    if (!ADDR.test(addr)) { say("Enter a valid EVM wallet address (0x, 40 hex characters).", "err"); return; }
+    var ep = (window.CITYHOOD && window.CITYHOOD.REG_ENDPOINT) || "";
+    if (!ep) { say("Submissions are not open yet. Nothing was sent.", "err"); return; }
+    say("Submitting...", "");
+    fetch(ep, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ stage: "tonight", wallet: addr, _subject: "Cityhood mint submission" }) })
+      .then(function (r) { if (!r.ok) throw new Error("bad"); say("Wallet received. Allocation follows submission order: first 500 GTD, next 1,000 WL, then Public. Lists are published here before the GTD wave.", "ok"); form.reset(); })
+      .catch(function () { say("Submission failed. Try again in a moment.", "err"); });
+  });
+  var waves = (window.CITYHOOD && window.CITYHOOD.WAVES) || null;
+  if (waves && waves.gtd) {
+    document.getElementById("wave-times").innerHTML =
+      "Wave times (UTC): <b>GTD " + waves.gtd + "</b> · <b>WL " + waves.wl + "</b> · <b>Public " + waves.pub + "</b>. Submissions close shortly before the GTD wave so the lists can be published.";
+  }
+})();
+</script>
 </body>
 </html>
