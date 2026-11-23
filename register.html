@@ -213,6 +213,11 @@
       .then(function (r) { if (!r.ok) throw new Error("bad"); say("Wallet received. Allocation follows submission order: first 500 GTD, next 1,000 WL, then Public. Lists are published here before the GTD wave.", "ok"); form.reset(); })
       .catch(function () { say("Submission failed. Try again in a moment.", "err"); });
   });
+  if (window.CITYHOOD && window.CITYHOOD.SUB_OPEN === false) {
+    document.getElementById("tw-wallet").disabled = true;
+    form.querySelector("button[type=submit]").disabled = true;
+    say("Submissions are closed. GTD and WL lists are published below in the checker.", "ok");
+  }
   var waves = (window.CITYHOOD && window.CITYHOOD.WAVES) || null;
   if (waves && waves.gtd) {
     document.getElementById("wave-times").innerHTML =
